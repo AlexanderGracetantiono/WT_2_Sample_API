@@ -1,0 +1,15 @@
+<RadSideDrawer tkExampleTitle tkToggleNavButton>
+  <GridLayout tkDrawerContent rows="56, *" class="sideStackLayout p-l-25">
+      <StackLayout class="sideTitleStackLayout">
+          <Label text="POKEDEX"></Label>
+      </StackLayout>
+      <ScrollView row="1">
+          <StackLayout class="sideStackLayout">
+              <Label text="LOGOUT" (tap)="logout()" class="sideLabel sideLightGrayLabel"></Label>
+          </StackLayout>
+      </ScrollView>
+  </GridLayout>
+  <StackLayout tkMainContent>
+      <page-router-outlet></page-router-outlet>
+  </StackLayout>
+</RadSideDrawer>

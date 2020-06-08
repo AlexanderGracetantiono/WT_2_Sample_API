@@ -1,0 +1,42 @@
+<ActionBar title='Details of '></ActionBar>
+
+<GridLayout rows="auto, auto, auto, *" columns="*, *" *ngIf="pokemon">
+
+    <Label [text]="name" class="h1 p-l-20" row="0" col="0" colSpan="2"></Label>
+    <Image [src]="pokemon.sprites.front_default" row="1" col="0" backgroundColor="white" ></Image>
+    <Image [src]="pokemon.sprites.back_default" row="1" col="1" backgroundColor="lightgray"></Image>
+
+    <Label text="Stats" class="h1 p-l-20" row="2" col="0" colSpan="2"></Label>
+
+
+    <GridLayout rows="auto, auto, auto, auto, auto, auto, auto" columns="*, *" row="3" col="0" colSpan="2" backgroundColor="darkslategray" class="p-l-20">
+        <Label text="Pokemon Name" class="font-weight-bold" row="0" col="0"></Label>
+        <Label [text]="pokemon.name" class="text-uppercase" row="0" col="1"></Label>
+
+        <Label text="Pokemon Type(s)" class="font-weight-bold" row="1" col="0"></Label>
+        <Label [text]="pokemon.types[0].type.name + (pokemon.types[1] ? '/' + pokemon.types[1].type.name : '')" row="1" col="1"></Label>
+        
+        <Label text="Pokemon Ability" class="font-weight-bold" row="2" col="0"></Label>
+        <Label [text]="pokemon.abilities[0].ability.name"  row="2" col="1"></Label>
+
+        <Label text="Moves" row="3" col="0"></Label>
+        <Label [text]="pokemon.moves[0].move.name" row="3" col="1"></Label>
+
+        <Label text="Hp" row="4" col="0"></Label>
+        <Label [text]="pokemon.stats[5].base_stat" row="4" col="1"></Label>
+        
+        <Label text="Attack" row="5" col="0"></Label>
+        <Label [text]="pokemon.stats[4].base_stat" row="5" col="1"></Label>
+
+        <Label text="Deff" row="6" col="0"></Label>
+        <Label [text]="pokemon.stats[3].base_stat" row="6" col="1"></Label>
+
+
+
+
+    </GridLayout>
+
+
+
+</GridLayout>
+

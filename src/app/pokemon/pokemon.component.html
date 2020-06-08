@@ -1,0 +1,12 @@
+<ActionBar title="Pokedex - Juvrience">
+</ActionBar>
+
+<GridLayout>
+    <ListView [items]="pokemons$ | async" (loadMoreItems)="loadMore()">
+        <ng-template let-pokemon="item">
+            <StackLayout>
+                <Label [nsRouterLink]="['/pokemon', pokemon.name]" [text]="pokemon.name"></Label>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+</GridLayout>

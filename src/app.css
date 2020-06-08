@@ -1,0 +1,6 @@
+@import "~@nativescript/theme/css/core.css";
+@import "~@nativescript/theme/css/aqua.css";
+
+label{
+    font-size: 16;
+}

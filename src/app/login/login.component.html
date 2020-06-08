@@ -1,0 +1,12 @@
+<GridLayout rows="*, auto, *" columns="*">
+    <StackLayout row="1" col="0" class="p-x-20">
+      <Image src="~/app/images/pokemon.png"></Image>
+      <Button
+        class="-primary"
+        text="Login with Google"
+        (tap)="login()"
+        [isEnabled]="!loginForm.invalid"
+      ></Button>
+    </StackLayout>
+  </GridLayout>
+  
