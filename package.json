@@ -1,6 +1,6 @@
 {
   "nativescript": {
-    "id": "org.nativescript.pokedex50170035",
+    "id": "com.juju.app",
     "tns-ios": {
       "version": "6.5.0"
     },

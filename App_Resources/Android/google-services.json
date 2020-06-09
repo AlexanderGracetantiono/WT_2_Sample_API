@@ -1,42 +1,71 @@
 {
   "project_info": {
-    "project_number": "875316363237",
-    "firebase_url": "https://pokedex-50170035.firebaseio.com",
-    "project_id": "pokedex-50170035",
-    "storage_bucket": "pokedex-50170035.appspot.com"
+    "project_number": "1032106889750",
+    "firebase_url": "https://sakura-insurance.firebaseio.com",
+    "project_id": "sakura-insurance",
+    "storage_bucket": "sakura-insurance.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:875316363237:android:03c004c1737fa3ff7af90c",
+        "mobilesdk_app_id": "1:1032106889750:android:9d8999079f9cc426ef5b37",
         "android_client_info": {
-          "package_name": "org.nativescript.pokedex50170035"
+          "package_name": "com.juju.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "875316363237-nb70ag5th83a9dguitmsjdvcma05n89j.apps.googleusercontent.com",
+          "client_id": "1032106889750-o5cngb4bvumsg6iiqo6qvr8s6fthdnan.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "org.nativescript.pokedex50170035",
-            "certificate_hash": "8c033db27f52cf3cefb62bd3b6e410f577195032"
+            "package_name": "com.juju.app",
+            "certificate_hash": "6acda0179218811a4db6291d86b6164826194ff6"
           }
         },
         {
-          "client_id": "875316363237-486u3nasgj9r328nanso9gir4a4vvs19.apps.googleusercontent.com",
+          "client_id": "1032106889750-41e55251j1cs8bhdcn5r5p0j5dorra78.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAczyv7ziGFl651P-ODJOHXsJbgAvsREuI"
+          "current_key": "AIzaSyDWm4H-tMa_GFLLBcKiaAbBuo8Z4uVSRuY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "875316363237-486u3nasgj9r328nanso9gir4a4vvs19.apps.googleusercontent.com",
+              "client_id": "1032106889750-41e55251j1cs8bhdcn5r5p0j5dorra78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032106889750:android:1dc2867b1db8ac9bef5b37",
+        "android_client_info": {
+          "package_name": "org.nativescript.project1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032106889750-41e55251j1cs8bhdcn5r5p0j5dorra78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWm4H-tMa_GFLLBcKiaAbBuo8Z4uVSRuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032106889750-41e55251j1cs8bhdcn5r5p0j5dorra78.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
