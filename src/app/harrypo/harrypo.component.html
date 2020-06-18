@@ -1,0 +1,18 @@
+<ActionBar title="Harry Porter Dex for Fans" style="background-color: darkgray;color: gold;">
+</ActionBar>
+
+<GridLayout>
+    <ListView [items]="hps$ | async">
+        <ng-template let-item="item">
+            <StackLayout>
+                <GridLayout rows="30px,30px,30px,30px" columns="100px,*">
+                    <Image [src]="item.image" row="0" col="0" rowSpan="4" backgroundColor="black"></Image>
+                    <Label [text]="item.name" row="0" col="1" style="font-weight: bold;"></Label>
+                    <Label [text]="item.species+'-'+item.gender" row="1" col="2"></Label>
+                    <Label [text]="'House: '+item.house" row="2" col="1"></Label>
+                    <Label [text]="'Wand : '+item.wand.core" row="3" col="1"></Label>
+                </GridLayout>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+</GridLayout>

@@ -5,7 +5,8 @@ import { Page } from 'tns-core-modules/ui/page/page';
 
 @Component({
     selector: 'shell',
-    templateUrl: 'shell.component.html'
+    templateUrl: 'shell.component.html',
+    styleUrls: ['./shell.component.css']
 })
 
 export class ShellComponent implements OnInit {
@@ -16,6 +17,35 @@ export class ShellComponent implements OnInit {
     logout() {
         this.ls.logout();
         this.router.navigate(["login"], { clearHistory: true });
+    }
+    login(){
+        this.router.navigate(["about"], { clearHistory: true });
+    }
+    onTap(name:String){
+        switch (name) {
+            case "poke":
+                this.router.navigate(["/pokemon"]);
+                break;
+            case "digi":
+                this.router.navigate(["/digimon"]);
+                break;
+            case "harry":
+                this.router.navigate(["/harryporter"]);
+                break;
+            case "logout":
+                this.router.navigate(["/login"]);
+                break;
+            case "about":
+                this.router.navigate(["/about"]);
+                break;
+        
+            case "home":
+                this.router.navigate(["/home"]);
+                break;
+        
+            default:
+                break;
+        }
     }
     ngOnInit() { }
 }

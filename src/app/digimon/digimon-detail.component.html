@@ -1,0 +1,11 @@
+<ActionBar [title]='"Details of "+name'style="background-color: yellow;color: black; font-weight: bolder;"></ActionBar>
+    <GridLayout rows="auto, auto, auto, auto" columns="auto, *" *ngIf="Digimon">
+
+        <Label text="Name : " class="h1 p-l-20" row="1" col="0" style="color: white;"></Label>
+        <Label [text]="name" class="h1 p-l-20" row="1" col="1" colSpan="2"></Label>
+        <Image [src]="Digimon.img" row="0" col="0" colSpan="2" backgroundColor="white"></Image>
+
+        <Label text="Level : " class="h1 p-l-20" row="2" col="0" style="color: white;"></Label>
+        <Label [text]="Digimon.level" class="h1 p-l-20" row="2" col="1" style="color: white;"></Label>
+
+    </GridLayout>

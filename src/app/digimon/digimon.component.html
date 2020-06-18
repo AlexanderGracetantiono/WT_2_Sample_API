@@ -1,0 +1,16 @@
+<ActionBar title="Digidex for Noob Player" style="background-color: yellow;color: black; font-weight: bolder;">
+</ActionBar>
+
+<GridLayout>
+    <ListView [items]="pokemons$ | async" (loadMoreItems)="loadMore()">
+        <!-- ng ng-template gunanya kyak FOR, untuk looping -->
+        <ng-template let-item="item">
+            <!-- stack lyout itu kyak DIV -->
+            <StackLayout>
+                <!-- [ ]  gunanya untuk manggil variable-->
+                <!-- [nsRouterLink]="['/pokemon', pokemon.name]" ini, ada slash tersembunyi, bacanya /pokemon/pikacu -->
+                <Label [nsRouterLink]="['/digimon', item.name]" [text]="item.name"></Label>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+</GridLayout>

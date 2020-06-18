@@ -1,0 +1,18 @@
+<ActionBar title="Game Dex for Rich" style="background-color: white;font-weight: bolder; color: black;">
+</ActionBar>
+
+<GridLayout>
+    <ListView [items]="hps$ | async">
+        <ng-template let-item="item">
+            <StackLayout>
+                <GridLayout rows="30px,30px,30px,30px" columns="100px,*">
+                    <Image [src]="item.background_image" row="0" col="0" rowSpan="4" backgroundColor="black"></Image>
+                    <Label [text]="item.name" row="0" col="1" style="font-weight: bold;"></Label>
+                    <Label [text]="'Released : '+item.released" row="1" col="2"></Label>
+                    <Label [text]="'Rating : '+item.rating" row="2" col="1"></Label>
+                    <Label [text]="'Genres : '+item.genres[0].name" row="3" col="1"></Label>
+                </GridLayout>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+</GridLayout>

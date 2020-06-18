@@ -8,20 +8,49 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:1032106889750:android:ca285f70f9d37d75ef5b37",
+        "android_client_info": {
+          "package_name": "com.hansen.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032106889750-cj975pgt7n4dc2hitdo3ka0lam9jrd1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hansen.app",
+            "certificate_hash": "7b7e7dec2e5a7aca870a313b5b399b09f8613ac3"
+          }
+        },
+        {
+          "client_id": "1032106889750-41e55251j1cs8bhdcn5r5p0j5dorra78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWm4H-tMa_GFLLBcKiaAbBuo8Z4uVSRuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032106889750-41e55251j1cs8bhdcn5r5p0j5dorra78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:1032106889750:android:9d8999079f9cc426ef5b37",
         "android_client_info": {
           "package_name": "com.juju.app"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "1032106889750-o5cngb4bvumsg6iiqo6qvr8s6fthdnan.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.juju.app",
-            "certificate_hash": "6acda0179218811a4db6291d86b6164826194ff6"
-          }
-        },
         {
           "client_id": "1032106889750-41e55251j1cs8bhdcn5r5p0j5dorra78.apps.googleusercontent.com",
           "client_type": 3
@@ -51,6 +80,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "1032106889750-sfrkh5cnfpsgn013286klhf52aabg3ed.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.nativescript.project1",
+            "certificate_hash": "6acda0179218811a4db6291d86b6164826194ff6"
+          }
+        },
         {
           "client_id": "1032106889750-41e55251j1cs8bhdcn5r5p0j5dorra78.apps.googleusercontent.com",
           "client_type": 3
