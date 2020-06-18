@@ -7,6 +7,12 @@
         (tap)="login()"
         [isEnabled]="!loginForm.invalid"
       ></Button>
+      <Button
+        class="-primary"
+        text="Skip GAN"
+        (tap)="skip()"
+        [isEnabled]="!loginForm.invalid"
+      ></Button>
     </StackLayout>
   </GridLayout>
   

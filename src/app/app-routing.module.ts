@@ -20,7 +20,7 @@ const routes: Routes = [
     // { path: "", redirectTo: "/login", pathMatch: "full" },
 
     // Uncomment bawah, kalau mau halaman utamnya Skip Login, Pake ini dlu klo login kalian gabisa
-    { path: "", redirectTo: "/home", pathMatch: "full" },
+    { path: "", redirectTo: "/login", pathMatch: "full" },
 
     { path: "login", component: LoginComponent },
     {
