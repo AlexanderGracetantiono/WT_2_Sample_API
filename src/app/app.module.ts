@@ -8,9 +8,13 @@ import { PokemonDetailComponent } from "./pokemon/pokemon-detail.component";
 import { DigimonComponent } from "./digimon/digimon.component";
 import { DigimonDetailComponent } from "./digimon/digimon-detail.component";
 import { HarryComponent } from "./harrypo/harrypo.component";
-import { HarryDetailComponent } from "./harrypo/harrypo-detail.component";
 import { GameComponent } from "./game/game.component";
-import { GameDetailComponent } from "./game/game-detail.component";
+///contoh:
+import { CovidComponent } from "./covid/covid.component";
+import { SkipComponent } from "./login/skip.component";
+import {HomeCovidComponent  } from "./covid/homeCovid/homeCovid.component";
+
+
 import { LoginComponent } from "./login/login.component";
 import { ShellComponent } from "./shell/shell.component";
 import { AboutComponent } from "./about/about.component";
@@ -45,9 +49,10 @@ Theme.setMode(Theme.Dark);
         DigimonComponent,
         DigimonDetailComponent,
         HarryComponent,
-        HarryDetailComponent,
         GameComponent,
-        GameDetailComponent
+        CovidComponent,
+        HomeCovidComponent,
+        SkipComponent
     ],
     providers: [],
     schemas: [NO_ERRORS_SCHEMA],

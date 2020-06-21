@@ -1,15 +1,21 @@
 <GridLayout rows="*, auto, *" columns="*">
     <StackLayout row="1" col="0" class="p-x-20">
-      <Image src="~/app/images/pokemon.png"></Image>
+      <Image src="~/app/images/dogecoin.png"></Image>
+      <Label
+      text="Doge want to know your data"
+      textwrap="true"
+      class="h2"
+      style="text-align: center;"
+    ></Label>
       <Button
         class="-primary"
-        text="Login with Google"
+        text="Gib Doge data"
         (tap)="login()"
         [isEnabled]="!loginForm.invalid"
       ></Button>
       <Button
         class="-primary"
-        text="Skip GAN"
+        text="Skip this"
         (tap)="skip()"
         [isEnabled]="!loginForm.invalid"
       ></Button>

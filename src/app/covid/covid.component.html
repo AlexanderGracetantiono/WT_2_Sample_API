@@ -1,0 +1,25 @@
+<ActionBar title="Covid 19 Data" style="background-color: red; font-weight: bold; color: white;">
+</ActionBar>
+
+<GridLayout>
+    <ListView [items]="countries$ | async" (loadMoreItems)="loadMore()">
+        <ng-template let-countries="item">
+            <StackLayout>
+                <GridLayout rows="auto, auto, auto, auto" columns="40px,*, *">
+                    <Image [src]="'https://www.countryflags.io/'+countries.CountryCode+'/flat/64.png'" row="0" col="0">
+                    </Image>
+                    <Label [text]="countries.Country" row="0" col="1" colSpan="2"></Label>
+
+                    <Label text="Total Confirmed" row="1" col="0" colSpan="2"></Label>
+                    <Label [text]="countries.TotalConfirmed" row="1" col="2"></Label>
+
+                    <Label text="Total Death" row="2" col="0" colSpan="2"></Label>
+                    <Label [text]="countries.TotalDeaths" row="2" col="2"></Label>
+
+                    <Label text="Total Recover" row="3" col="0" colSpan="2"></Label>
+                    <Label [text]="countries.TotalRecovered" row="3" col="2"></Label>
+                </GridLayout>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+</GridLayout>

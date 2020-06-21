@@ -1,0 +1,43 @@
+<ActionBar title='Covid Summary'></ActionBar>
+
+<!-- grid layout = table -->
+<!--     * itu ambil space sisa,
+        auto, itu ikutin ukuran konten 
+-->
+<GridLayout rows="auto, auto, auto, auto, auto, auto" columns="*" *ngIf="globalSum" style="background-color: lavender;">
+    <GridLayout row="0" col="0" rows="auto,auto" >
+        <Image src="~/app/images/bannercovid.png" row="0"></Image>
+        <Label text="Global Summary" class="h1 p-l-20" row="1"
+            style="color: black;text-align: center; font-weight: bolder;"></Label>
+    </GridLayout>
+
+    <GridLayout row="1" col="0" rows="auto" columns="40px,auto,auto" class="p-x-20 dataLayout">
+        <Image src="~/app/images/hospital-bed.png" row="0" col="0"></Image>
+        <Label text="Total Confirmed : " class="h3 p-l-20" row="0" col="1"
+            style="color:black; font-size: 16px;"></Label>
+        <Label [text]="globalSum.TotalConfirmed+' people'" class="h3 p-l-20" row="0" col="2"
+            style="color:black; font-size: 16px;"></Label>
+    </GridLayout>
+    <GridLayout row="2" col="0" rows="auto" columns="40px,auto,auto" class="p-x-20 dataLayout">
+        <Image src="~/app/images/sick.png" row="0" col="0"></Image>
+        <Label text="New Confirmed : " class="h3 p-l-20" row="0" col="1"
+            style="color:black; font-size: 16px;"></Label>
+        <Label [text]="globalSum.NewConfirmed+' people'" class="h3 p-l-20" row="0" col="2"
+            style="color:black; font-size: 16px;"></Label>
+    </GridLayout>
+    <GridLayout row="3" col="0" rows="auto" columns="40px,auto,auto" class="p-x-20 dataLayout">
+        <Image src="~/app/images/death.png" row="0" col="0"></Image>
+        <Label text="Total Death   : " class="h3 p-l-20" row="0" col="1"
+            style="color:black; font-size: 16px;"></Label>
+        <Label [text]="globalSum.TotalDeaths+' people'" class="h3 p-l-20" row="0" col="2"
+            style="color:black; font-size: 16px;"></Label>
+    </GridLayout>
+    <GridLayout row="4" col="0" rows="auto" columns="40px,auto,auto" class="p-x-20 dataLayout">
+        <Image src="~/app/images/health.png" row="0" col="0"></Image>
+        <Label text="Total Recover : " class="h3 p-l-20" row="0" col="1"
+            style="color:black; font-size: 16px;"></Label>
+        <Label [text]="globalSum.TotalRecovered+' people'" class="h3 p-l-20" row="0" col="2"
+            style="color:black; font-size: 16px;"></Label>
+    </GridLayout>
+    <Label text="Country List" class="h5 Stat-nav p-l-20" row="5" col="0"  style="color: white; " (tap)="onTap('countrylist')"></Label>
+</GridLayout>

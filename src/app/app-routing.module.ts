@@ -7,14 +7,14 @@ import { PokemonDetailComponent } from "./pokemon/pokemon-detail.component";
 import { DigimonComponent } from "./digimon/digimon.component";
 import { DigimonDetailComponent } from "./digimon/digimon-detail.component";
 import { HarryComponent } from "./harrypo/harrypo.component";
-import { HarryDetailComponent } from "./harrypo/harrypo-detail.component";
+import { CovidComponent } from "./covid/covid.component";
 import { GameComponent } from "./game/game.component";
-import { GameDetailComponent } from "./game/game-detail.component";
 import { LoginComponent } from "./login/login.component";
 import { ShellComponent } from "./shell/shell.component";
 import { AboutComponent } from "./about/about.component";
 import { HomeComponent } from "./home/home.component";
-
+import {HomeCovidComponent  } from "./covid/homeCovid/homeCovid.component";
+import { SkipComponent } from "./login/skip.component";
 const routes: Routes = [
     // Uncomment bawah, kalau mau halaman utama nya login
     // { path: "", redirectTo: "/login", pathMatch: "full" },
@@ -31,12 +31,13 @@ const routes: Routes = [
             { path: "pokemon", component: PokemonComponent },
             { path: "pokemon/:name", component: PokemonDetailComponent },
             { path: "harryporter", component: HarryComponent },
-            { path: "harryporter/:id", component: HarryDetailComponent },
             { path: "digimon", component: DigimonComponent },
             { path: "digimon/:id", component: DigimonDetailComponent },
             { path: "game", component: GameComponent },
-            { path: "game/:id", component: GameDetailComponent },
             { path: "about", component: AboutComponent },
+            { path: "covidcountry", component: CovidComponent },
+            { path: "homecovid", component: HomeCovidComponent },
+            { path: "skip", component: SkipComponent },
         ],
     },
 ];

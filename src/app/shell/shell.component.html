@@ -1,25 +1,25 @@
 <RadSideDrawer tkExampleTitle tkToggleNavButton>
-    <GridLayout tkDrawerContent rows="56px,160px, *" class="sideStackLayout p-l-25">
+    <GridLayout tkDrawerContent rows="56px,100px, *" class="sideStackLayout p-l-25">
         <StackLayout row="1" class="sideTitleStackLayout">
-            <Image src="~/app/images/04_sk2.png" row="1" col="1" backgroundColor="lightgray" style="width: 120px;height: 120px;"></Image>
-            <Label   text="ANY DEX" class="title"></Label>
+            <Image src="~/app/images/dogecoin.png" row="1" col="1"
+                style="width: 120px;height: 120px;"></Image>
+            <Label text="Doge Super APP V2.0" class="title"></Label>
         </StackLayout>
         <ScrollView row="2">
             <StackLayout class="sideStackLayout">
-                <Label text="Home" class="h5 Stat-nav p-l-20" style="color: white; "
-                    (tap)="onTap('home')"></Label>
+                <Label text="Home" class="h5 Stat-nav p-l-20" style="color: white; " (tap)="onTap('home')"></Label>
                 <Label text="Pokemon API" class="h5 Stat-nav p-l-20" style="color: white; "
                     (tap)="onTap('poke')"></Label>
-                <Label text="Digimon API" class="h5 Stat-nav p-l-20"  style="color: white; "
+                <Label text="Digimon API" class="h5 Stat-nav p-l-20" style="color: white; "
                     (tap)="onTap('digi')"></Label>
                 <Label text="Harry Porter API" class="h5 Stat-nav p-l-20" style="color: white; "
                     (tap)="onTap('harry')"></Label>
                 <Label text="Digital Games API" class="h5 Stat-nav p-l-20" style="color: white; "
                     (tap)="onTap('game')"></Label>
-                <Label text="About" class="h5 Stat-nav p-l-20" style="color: white; "
-                    (tap)="onTap('about')"></Label>
-                <Label text="Logout" class="h5 Stat-nav p-l-20" style="color: white; "
-                    (tap)="onTap('logout')"></Label>
+                <Label text="Covid Data" class="h5 Stat-nav p-l-20" style="color: white; "
+                    (tap)="onTap('covid')"></Label>
+                <Label text="About" class="h5 Stat-nav p-l-20" style="color: white; " (tap)="onTap('about')"></Label>
+                <Label text="Logout" class="h5 Stat-nav p-l-20" style="color: white; " (tap)="onTap('logout')"></Label>
             </StackLayout>
         </ScrollView>
     </GridLayout>

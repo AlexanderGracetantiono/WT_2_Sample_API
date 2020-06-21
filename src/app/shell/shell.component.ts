@@ -38,6 +38,12 @@ export class ShellComponent implements OnInit {
             case "about":
                 this.router.navigate(["/about"]);
                 break;
+                case "game":
+                    this.router.navigate(["/game"]);
+                    break;
+                case "covid":
+                    this.router.navigate(["/homecovid"]);
+                    break;
         
             case "home":
                 this.router.navigate(["/home"]);

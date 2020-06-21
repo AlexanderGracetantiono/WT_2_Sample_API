@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
         );
     }
     skip(){
-        this.router.navigate(["/home"], { clearHistory: true });
+        this.router.navigate(["/skip"], { clearHistory: true });
     }
     login() {
         this.ls.login().then(

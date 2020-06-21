@@ -46,6 +46,9 @@ export class HomeComponent implements OnInit {
             case "game":
                 this.router.navigate(["/game"]);
                 break;
+            case "covid":
+                this.router.navigate(["/homecovid"]);
+                break;
         
             default:
                 break;
